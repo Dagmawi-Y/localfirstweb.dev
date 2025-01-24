@@ -48,14 +48,18 @@
     <link href="/assets/images/logo.svg" rel="icon" type="image/svg+xml" />
     <link href="/assets/css/main.css" rel="stylesheet" />
     <link href="{{site.url}}{{page.url}}" rel="canonical" />
+    <script src="/assets/js/nav.js" defer></script>
   </head>
 
   <body>
+    {% include navbar.html %}
     <header>
-      <a href="/"
-        ><img alt="Local-First Software Logo" src="/assets/images/logo.svg" />
-        <h1>Local-first Software</h1></a
-      >
+      <div class="header-content">
+        <a href="/" class="logo-link">
+          <img alt="Local-First Software Logo" src="/assets/images/logo.svg" />
+          <h1>Local-first Software</h1>
+        </a>
+      </div>
     </header>
   </body>
 </html>
